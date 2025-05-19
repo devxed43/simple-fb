@@ -40,8 +40,10 @@ var usernamePrompt = prompt("enter username: ");
 var passwordPrompt = prompt("enter password: ");
 
 function signIn(user, pass) {
-  if (user === database[0].username && pass === database[0].password) {
-    console.log(`${user}'s timeline:`, newsfeed[0].timeline);
+  if (user === database[0].username && 
+      pass === database[0].password) {
+    // console.log(`${user}'s timeline:`, newsfeed[0].timeline);
+    alert(`welcome ${user}, you are now logged in`)
   } else {
     alert("wrong username or password");
   }
